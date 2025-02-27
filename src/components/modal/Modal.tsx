@@ -1,10 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import Image from "next/image";
 import { X } from "lucide-react";
 
-export default function AuthModal({ isOpen, onClose }: any) {
+interface AuthModalProps {
+    isOpen: boolean;
+    onClose: () => void;
+    children?:ReactNode
+  }
+  
+
+export default function AuthModal({ isOpen, onClose }:AuthModalProps) {
   const [isLogin, setIsLogin] = useState(true);
 
   if (!isOpen) return null;

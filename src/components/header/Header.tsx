@@ -8,7 +8,7 @@ export const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalType, setModalType] = useState(""); // "login" or "signup"
 
-  const openModal = (type:any) => {
+  const openModal = (type:string) => {
     setModalType(type);
     setIsModalOpen(true);
   };
