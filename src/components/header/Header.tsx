@@ -14,7 +14,7 @@ export const Header = () => {
   };
 
   return (
-    <section className="w-full flex items-center fixed justify-between px-4 h-[100px] bg-[#131313] border-b-[1px] border-silver z-50">
+    <section className="w-full flex items-center fixed justify-between px-4 h-[100px] bg-[#131313] border-b-[1px] border-silver z-30">
       <div className="flex items-center gap-3">
         <Image src={"/images/logo.webp"} width={100} height={80} alt="logo" />
         <h1 className="text-xl font-bold text-white">Golden Casino</h1>

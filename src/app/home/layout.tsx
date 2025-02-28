@@ -29,12 +29,12 @@ export default function RootLayout({
         </div>
 
         {/* Main Content */}
-        <div className="flex-1">{children}</div>
+        <div className="flex-1 lg:ml-[380px] pt-[100px]">{children}</div>
       </div>
 
       {/* Bottom Tab Navigation (Mobile) - Always on Top of SideNav */}
       <div
-        className={`fixed bottom-0 w-full bg-[#262626] lg:hidden p-4 flex items-center justify-evenly z-50 transition-all duration-300 ${
+        className={`fixed bottom-0 w-full bg-[#262626] lg:hidden p-4 flex items-center justify-evenly z-40 transition-all duration-300 ${
           showSideNav ? "translate-y-0" : "translate-y-0"
         }`}
       >
